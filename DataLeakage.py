@@ -55,5 +55,8 @@ for depth in [1, 5, 20]:
     test_acc  = model.score(X_test, y_test)
     print(f"Depth {depth:2d}  | Train: {train_acc:.2f}  Test: {test_acc:.2f}")
 
-
+#The DecisionTreeClassifier results show that depth=5 provides the best balance: 
+#it achieves high test accuracy without overfitting, 
+#unlike depth=20 which memorizes the training set. 
+#Depth=1 is too simple and underfits.
 
